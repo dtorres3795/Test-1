@@ -21,37 +21,71 @@
             <h1>World's Best Password Generator</h1>
         </div>
 
-        <div id="wrapper">
+        <!-- Nav Tabs -->
+        <div id="tabs">
+            <button class="tab active" onclick="show_tab('generator', this)">Generator</button>
+            <button class="tab" onclick="show_tab('about', this)">About</button>
+        </div>
 
-            <!-- Instruction -->
-            <p id="description">Press to Generate New Passwords</p>
-            <div id="arrow">&#9660;</div>
+        <!-- Generator Tab -->
+        <div id="generator" class="tab_content">
+            <div id="wrapper">
 
-            <!-- Generate Button -->
-            <div id="button_container">
-                <button onclick="generate_password(16)">Generate</button>
-            </div>
+                <!-- Instruction -->
+                <p id="description">Press to Generate New Passwords</p>
+                <div id="arrow">&#9660;</div>
 
-            <!-- Loading Bar -->
-            <div id="loading_bar_bg">
-                <div id="loading_bar"></div>
-            </div>
-
-            <hr>
-
-            <!-- Password Output -->
-            <p id="output_label">Output</p>
-            <div id="container">
-                <div class="column">
-                    <p id="password_1_el" class="output_display"></p>
-                    <p id="password_3_el" class="output_display"></p>
+                <!-- Generate Button -->
+                <div id="button_container">
+                    <button onclick="generate_password(16)">Generate</button>
                 </div>
-                <div class="column">
-                    <p id="password_2_el" class="output_display"></p>
-                    <p id="password_4_el" class="output_display"></p>
+
+                <hr>
+
+                <!-- Password Output -->
+                <p id="output_label">Output</p>
+                <div id="container">
+                    <div class="column">
+                        <p id="password_1_el" class="output_display"></p>
+                        <p id="password_3_el" class="output_display"></p>
+                        <p id="password_5_el" class="output_display"></p>
+                    </div>
+                    <div class="column">
+                        <p id="password_2_el" class="output_display"></p>
+                        <p id="password_4_el" class="output_display"></p>
+                        <p id="password_6_el" class="output_display"></p>
+                    </div>
                 </div>
             </div>
         </div>
+
+        <!-- About Tab -->
+        <div id="about" class="tab_content" style="display:none;">
+            <div id="wrapper">
+
+                <!-- About Section -->
+                <h2>About This Tool</h2>
+                <p>This password generator creates strong, random passwords to help keep your accounts secure. Each password is 16 characters long and uses a mix of uppercase, lowercase, numbers, and special characters.</p>
+
+                <img src="https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=600" alt="Cybersecurity concept">
+
+                <h2>Why Strong Passwords Matter</h2>
+                <p>Weak passwords are one of the most common causes of account breaches. A strong password should be long, random, and unique for every site you use. Never reuse passwords across multiple accounts.</p>
+
+                <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600" alt="Code on a screen">
+
+                <h2>How It Works</h2>
+                <p>The generator pulls from an array of 90+ characters and uses JavaScript's <code>Math.random()</code> to build each password character by character. Every click produces 6 completely new passwords instantly.</p>
+
+            </div>
+        </div>
+
+        <!-- Easter Egg -->
+        <div id="easter_egg" onclick="hide_easter_egg()">
+            <img src="https://media.giphy.com/media/3o7abKhOpu0NwenH3O/giphy.gif" alt="Easter egg gif">
+            <p>okay okay, slow down! 😅</p>
+        </div>
+
         <script src="script.js"></script>
     </body>
 </html>
