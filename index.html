@@ -1,0 +1,57 @@
+<!-- Head -->
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Karla:wght@600;800&family=Orbitron&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Inter:wght@200;300&family=Karla:wght@600;800&family=Orbitron&display=swap" rel="stylesheet">
+    </head>
+
+    <!-- Body -->
+    <body>
+
+        <!-- Banner -->
+        <div id="banner">
+            <h1>World's Best Password Generator</h1>
+        </div>
+
+        <div id="wrapper">
+
+            <!-- Instruction -->
+            <p id="description">Press to Generate New Passwords</p>
+            <div id="arrow">&#9660;</div>
+
+            <!-- Generate Button -->
+            <div id="button_container">
+                <button onclick="generate_password(16)">Generate</button>
+            </div>
+
+            <!-- Loading Bar -->
+            <div id="loading_bar_bg">
+                <div id="loading_bar"></div>
+            </div>
+
+            <hr>
+
+            <!-- Password Output -->
+            <p id="output_label">Output</p>
+            <div id="container">
+                <div class="column">
+                    <p id="password_1_el" class="output_display"></p>
+                    <p id="password_3_el" class="output_display"></p>
+                </div>
+                <div class="column">
+                    <p id="password_2_el" class="output_display"></p>
+                    <p id="password_4_el" class="output_display"></p>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
