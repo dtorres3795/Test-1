@@ -28,7 +28,12 @@ function check_spam(){
 
 function show_easter_egg(){
     const egg=document.getElementById("easter_egg")
-    egg.style.display="flex"
+    const skeleton=document.getElementById("skeleton")
+    egg.style.display="block"
+    skeleton.style.animation="none"
+    skeleton.offsetHeight
+    skeleton.style.animation="run_across 3s linear forwards"
+    setTimeout(() => { egg.style.display="none" }, 3000)
 }
 
 function hide_easter_egg(){
