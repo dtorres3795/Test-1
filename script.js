@@ -10,7 +10,39 @@ let password_1_El=document.getElementById("password_1_el")
 let password_2_El=document.getElementById("password_2_el")
 let password_3_El=document.getElementById("password_3_el")
 let password_4_El=document.getElementById("password_4_el")
-let loadingBar=document.getElementById("loading_bar")
+let password_5_El=document.getElementById("password_5_el")
+let password_6_El=document.getElementById("password_6_el")
+
+// Easter Egg Tracking
+let click_times=[]
+
+function check_spam(){
+    const now=Date.now()
+    click_times.push(now)
+    click_times=click_times.filter(t => now - t < 2000)
+    if(click_times.length >= 7){
+        click_times=[]
+        show_easter_egg()
+    }
+}
+
+function show_easter_egg(){
+    const egg=document.getElementById("easter_egg")
+    egg.style.display="flex"
+}
+
+function hide_easter_egg(){
+    const egg=document.getElementById("easter_egg")
+    egg.style.display="none"
+}
+
+// Tab Switching
+function show_tab(tab_name, btn){
+    document.querySelectorAll('.tab_content').forEach(tab => tab.style.display = 'none')
+    document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'))
+    document.getElementById(tab_name).style.display = 'block'
+    btn.classList.add('active')
+}
 
 // Generate a Single Character
 function generate_a_char(){
@@ -21,24 +53,28 @@ function generate_a_char(){
 
 // Generate Passwords
 function generate_password(length_of_password){
-    loadingBar.style.width="100%"
-    setTimeout(() => { loadingBar.style.width="0%" }, 500)
-
+    check_spam()
     let i = 0;
     const n = length_of_password;
     password_1=""
     password_2=""
     password_3=""
     password_4=""
+    password_5=""
+    password_6=""
     do {
         password_1+=generate_a_char();
         password_2+=generate_a_char();
         password_3+=generate_a_char();
         password_4+=generate_a_char();
+        password_5+=generate_a_char();
+        password_6+=generate_a_char();
         i++;
     } while(i < n);
-    password_1_El.textContent=password_1
-    password_2_El.textContent=password_2
-    password_3_El.textContent=password_3
-    password_4_El.textContent=password_4
+    password_1_El.textContent=Math.random() < 0.01 ? "$ucce$$" : password_1
+    password_2_El.textContent=Math.random() < 0.01 ? "$ucce$$" : password_2
+    password_3_El.textContent=Math.random() < 0.01 ? "$ucce$$" : password_3
+    password_4_El.textContent=Math.random() < 0.01 ? "$ucce$$" : password_4
+    password_5_El.textContent=Math.random() < 0.01 ? "$ucce$$" : password_5
+    password_6_El.textContent=Math.random() < 0.01 ? "$ucce$$" : password_6
 }
