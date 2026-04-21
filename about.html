@@ -1,20 +1,54 @@
-        <!-- About Tab -->
-        <div id="about" class="tab_content" style="display:none;">
-            <div id="wrapper">
+<!-- Head -->
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
 
-                <!-- About Section -->
-                <h2>About This Tool</h2>
-                <p>This password generator creates strong, random passwords to help keep your accounts secure. Each password is 16 characters long and uses a mix of uppercase, lowercase, numbers, and special characters.</p>
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Karla:wght@600;800&family=Orbitron&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Inter:wght@200;300&family=Karla:wght@600;800&family=Orbitron&display=swap" rel="stylesheet">
+    </head>
 
-                <img src="https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=600" alt="Cybersecurity concept">
+    <!-- Body -->
+    <body>
 
-                <h2>Why Strong Passwords Matter</h2>
-                <p>Weak passwords are one of the most common causes of account breaches. A strong password should be long, random, and unique for every site you use. Never reuse passwords across multiple accounts.</p>
-
-                <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600" alt="Code on a screen">
-
-                <h2>How It Works</h2>
-                <p>The generator pulls from an array of 90+ characters and uses JavaScript's <code>Math.random()</code> to build each password character by character. Every click produces 6 completely new passwords instantly.</p>
-
-            </div>
+        <!-- Banner -->
+        <div id="banner">
+            <h1>World's Best Password Generator</h1>
         </div>
+
+        <!-- Nav -->
+        <nav id="navbar">
+            <a href="index.html" class="nav-link">Generator</a>
+            <a href="about.html" class="nav-link active">About</a>
+            <a href="tips.html" class="nav-link">Tips</a>
+            <a href="checker.html" class="nav-link">Checker</a>
+            <a href="faq.html" class="nav-link">FAQ</a>
+        </nav>
+
+        <!-- Main Content -->
+        <div id="wrapper">
+
+            <!-- About Section -->
+            <h2>About This Tool</h2>
+            <p>This password generator creates strong, random passwords to help keep your accounts secure. Each password is 16 characters long and uses a mix of uppercase, lowercase, numbers, and special characters.</p>
+
+            <img src="https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=600" alt="Cybersecurity concept">
+
+            <h2>Why Strong Passwords Matter</h2>
+            <p>Weak passwords are one of the most common causes of account breaches. A strong password should be long, random, and unique for every site you use. Never reuse passwords across multiple accounts.</p>
+
+            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600" alt="Code on a screen">
+
+            <h2>How It Works</h2>
+            <p>The generator pulls from an array of 90+ characters and uses JavaScript's <code>Math.random()</code> to build each password character by character. Every click produces 6 completely new passwords instantly.</p>
+
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
