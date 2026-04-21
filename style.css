@@ -3,15 +3,16 @@ body {
     margin: 0;
     background-color: #ECFDF5;
     font-family: 'Inter', sans-serif;
+    line-height: 1.7;
 }
 
 /* Banner */
-#banner{
+#banner {
     background: linear-gradient(to right, #4F46E5, #A855F7);
     padding: 14px 24px;
 }
 
-#banner h1{
+#banner h1 {
     color: white;
     font-family: 'Karla', sans-serif;
     font-size: 22px;
@@ -46,35 +47,8 @@ body {
     color: white;
 }
 
-/* Tabs */
-#tabs{
-    display: flex;
-    gap: 0;
-    background-color: #273549;
-    border-bottom: 1px solid #ddd;
-    padding: 0 24px;
-}
-
-.tab{
-    font-family: 'Inter', sans-serif;
-    font-size: 15px;
-    color: #a0aec0;
-    background: none;
-    border: none;
-    border-bottom: 3px solid transparent;
-    padding: 12px 20px;
-    cursor: pointer;
-    border-radius: 0;
-}
-
-.tab.active{
-    color: #5DEF92;
-    border-bottom: 3px solid #5DEF92;
-    font-weight: 500;
-}
-
 /* Wrapper */
-#wrapper{
+#wrapper {
     max-width: 480px;
     margin: 40px auto;
     background-color: white;
@@ -83,15 +57,52 @@ body {
     padding: 30px 40px;
 }
 
+/* Headings */
+#wrapper h2 {
+    color: #273549;
+    font-family: 'Karla', sans-serif;
+    font-size: 22px;
+    margin-top: 24px;
+}
+
+#wrapper h3 {
+    color: #273549;
+    font-family: 'Karla', sans-serif;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+/* Paragraphs */
+#wrapper p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #444;
+}
+
+/* Images */
+#wrapper img {
+    width: 100%;
+    border-radius: 8px;
+    margin: 12px 0;
+}
+
+/* Code */
+#wrapper code {
+    background-color: #f0f0f0;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 13px;
+}
+
 /* Description */
-#description{
+#description {
     text-align: center;
     font-size: 16px;
     margin-bottom: 4px;
 }
 
 /* Arrow */
-#arrow{
+#arrow {
     text-align: center;
     font-size: 28px;
     color: #4F46E5;
@@ -99,13 +110,13 @@ body {
 }
 
 /* Button Container */
-#button_container{
+#button_container {
     display: flex;
     justify-content: center;
 }
 
 /* Generate Button */
-#button_container button{
+#button_container button {
     font-family: 'Inter', sans-serif;
     color: #333;
     background-color: #e0e0e0;
@@ -116,24 +127,24 @@ body {
     cursor: pointer;
 }
 
-hr{
+hr {
     margin: 20px 0;
 }
 
 /* Output Label */
-#output_label{
+#output_label {
     font-size: 14px;
     margin-bottom: 8px;
 }
 
 /* Password Output Container */
-#container{
+#container {
     display: flex;
     justify-content: space-between;
     gap: 10px;
 }
 
-.column{
+.column {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -141,7 +152,7 @@ hr{
 }
 
 /* Output Display */
-.output_display{
+.output_display {
     display: flex;
     align-items: center;
     background-color: white;
@@ -152,37 +163,11 @@ hr{
     color: #273549;
     font-size: 13px;
     min-height: 30px;
-}
-
-/* About Tab */
-#wrapper h2{
-    color: #273549;
-    font-family: 'Karla', sans-serif;
-    font-size: 22px;
-    margin-top: 24px;
-}
-
-#wrapper p{
-    font-size: 15px;
-    line-height: 1.7;
-    color: #444;
-}
-
-#wrapper img{
-    width: 100%;
-    border-radius: 8px;
-    margin: 12px 0;
-}
-
-#wrapper code{
-    background-color: #f0f0f0;
-    padding: 2px 6px;
-    border-radius: 4px;
-    font-size: 13px;
+    word-break: break-all;
 }
 
 /* Easter Egg */
-#easter_egg{
+#easter_egg {
     display: none;
     position: fixed;
     bottom: 80px;
@@ -193,7 +178,7 @@ hr{
     z-index: 999;
 }
 
-#skeleton{
+#skeleton {
     position: absolute;
     height: 120px;
     width: auto;
@@ -203,4 +188,29 @@ hr{
 @keyframes run_across {
     from { left: -150px; }
     to { left: 110%; }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    #wrapper {
+        margin: 16px;
+        padding: 20px;
+    }
+
+    #banner h1 {
+        font-size: 16px;
+    }
+
+    .nav-link {
+        font-size: 13px;
+        padding: 10px 12px;
+    }
+
+    #container {
+        flex-direction: column;
+    }
+
+    .output_display {
+        font-size: 11px;
+    }
 }
