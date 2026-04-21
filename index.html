@@ -21,49 +21,35 @@
             <h1>World's Best Password Generator</h1>
         </div>
 
-        <!-- Nav Tabs -->
-        <div id="tabs">
-            <button class="tab active" onclick="show_tab('generator', this)">Generator</button>
-            <button class="tab" onclick="show_tab('about', this)">About</button>
-        </div>
+        <!-- Nav -->
+        <nav id="navbar">
+            <a href="index.html" class="nav-link active">Generator</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="tips.html" class="nav-link">Tips</a>
+            <a href="checker.html" class="nav-link">Checker</a>
+            <a href="faq.html" class="nav-link">FAQ</a>
+        </nav>
 
-        <!-- Generator Tab -->
-        <div id="generator" class="tab_content">
-            <div id="wrapper">
+        <!-- Main Content -->
+        <div id="wrapper">
 
-                <!-- Instruction -->
-                <p id="description">Press to Generate New Passwords</p>
-                <div id="arrow">&#9660;</div>
+            <!-- Instruction -->
+            <p id="description">Press to Generate New Passwords</p>
+            <div id="arrow">&#9660;</div>
 
-                <!-- Generate Button -->
-                <div id="button_container">
-                    <button onclick="generate_password(16)">Generate</button>
-                </div>
-
-                <hr>
-
-                <!-- Password Output -->
-                <p id="output_label">Output</p>
-                <div id="container">
-                    <div class="column">
-                        <p id="password_1_el" class="output_display"></p>
-                        <p id="password_3_el" class="output_display"></p>
-                        <p id="password_5_el" class="output_display"></p>
-                    </div>
-                    <div class="column">
-                        <p id="password_2_el" class="output_display"></p>
-                        <p id="password_4_el" class="output_display"></p>
-                        <p id="password_6_el" class="output_display"></p>
-                    </div>
-                </div>
+            <!-- Generate Button -->
+            <div id="button_container">
+                <button onclick="generate_password(16)">Generate</button>
             </div>
-        </div>
 
-        <!-- Easter Egg -->
-        <div id="easter_egg">
-            <img id="skeleton" src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExN3hrYnI1MWFhYTNzcXk4a2YyaDgxMjJsNGQ2NWRlbGhsY2R4MjFpOSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/o7mLSkGYCu9Pi/giphy.gif" alt="Running skeleton">
-        </div>
+            <hr>
 
-        <script src="script.js"></script>
-    </body>
-</html>
+            <!-- Password Output -->
+            <p id="output_label">Output</p>
+            <div id="container">
+                <div class="column">
+                    <p id="password_1_el" class="output_display"></p>
+                    <p id="password_3_el" class="output_display"></p>
+                    <p id="password_5_el" class="output_display"></p>
+                </div>
+                <div class="column">
