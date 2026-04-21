@@ -41,14 +41,6 @@ function hide_easter_egg(){
     egg.style.display="none"
 }
 
-// Tab Switching
-function show_tab(tab_name, btn){
-    document.querySelectorAll('.tab_content').forEach(tab => tab.style.display = 'none')
-    document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'))
-    document.getElementById(tab_name).style.display = 'block'
-    btn.classList.add('active')
-}
-
 // Generate a Single Character
 function generate_a_char(){
     let random_nr = Math.floor(Math.random() * characters.length);
@@ -58,6 +50,7 @@ function generate_a_char(){
 
 // Generate Passwords
 function generate_password(length_of_password){
+    if(!password_1_El) return
     check_spam()
     let i = 0;
     const n = length_of_password;
