@@ -14,7 +14,7 @@ body {
 
 #banner h1 {
     color: white;
-    font-family: 'Karla', sans-serif;
+    font-family: 'Lucida Sans', sans-serif;
     font-size: 22px;
     margin: 0;
 }
@@ -60,7 +60,7 @@ body {
 /* About page text */
 .page-heading {
     color: #273549;
-    font-family: 'Karla', sans-serif;
+    font-family: 'Lucida Sans', sans-serif;
     font-size: 22px;
     margin-top: 24px;
     margin-bottom: 8px;
