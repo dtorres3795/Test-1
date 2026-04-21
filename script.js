@@ -29,6 +29,7 @@ function check_spam(){
 function show_easter_egg(){
     const egg=document.getElementById("easter_egg")
     const skeleton=document.getElementById("skeleton")
+    if(!egg || !skeleton) return
     egg.style.display="block"
     skeleton.style.animation="none"
     skeleton.offsetHeight
@@ -38,6 +39,7 @@ function show_easter_egg(){
 
 function hide_easter_egg(){
     const egg=document.getElementById("easter_egg")
+    if(!egg) return
     egg.style.display="none"
 }
 
