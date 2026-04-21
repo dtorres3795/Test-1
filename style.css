@@ -49,7 +49,7 @@ body {
 
 /* Wrapper */
 #wrapper {
-    max-width: 480px;
+    max-width: 560px;
     margin: 40px auto;
     background-color: white;
     border: 1px solid #ccc;
@@ -57,37 +57,29 @@ body {
     padding: 30px 40px;
 }
 
-/* Headings */
-#wrapper h2 {
+/* About page text */
+.page-heading {
     color: #273549;
     font-family: 'Karla', sans-serif;
     font-size: 22px;
     margin-top: 24px;
+    margin-bottom: 8px;
 }
 
-#wrapper h3 {
-    color: #273549;
-    font-family: 'Karla', sans-serif;
-    font-size: 18px;
-    margin-top: 20px;
-}
-
-/* Paragraphs */
-#wrapper p {
+.page-text {
     font-size: 16px;
     line-height: 1.7;
     color: #444;
+    margin-bottom: 12px;
 }
 
-/* Images */
-#wrapper img {
+.page-image {
     width: 100%;
     border-radius: 8px;
     margin: 12px 0;
 }
 
-/* Code */
-#wrapper code {
+code {
     background-color: #f0f0f0;
     padding: 2px 6px;
     border-radius: 4px;
@@ -99,6 +91,7 @@ body {
     text-align: center;
     font-size: 16px;
     margin-bottom: 4px;
+    color: #444;
 }
 
 /* Arrow */
@@ -135,6 +128,7 @@ hr {
 #output_label {
     font-size: 14px;
     margin-bottom: 8px;
+    color: #888;
 }
 
 /* Password Output Container */
