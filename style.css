@@ -18,6 +18,34 @@ body {
     margin: 0;
 }
 
+/* Navbar */
+#navbar {
+    display: flex;
+    background-color: #273549;
+    padding: 0 24px;
+    border-bottom: 1px solid #1a2535;
+    flex-wrap: wrap;
+}
+
+.nav-link {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    color: #a0aec0;
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+    padding: 12px 20px;
+}
+
+.nav-link.active {
+    color: #5DEF92;
+    border-bottom: 3px solid #5DEF92;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: white;
+}
+
 /* Tabs */
 #tabs{
     display: flex;
