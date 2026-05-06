@@ -1,4 +1,3 @@
-/* Body */
 body {
     margin: 0;
     background-color: #000000;
@@ -6,7 +5,6 @@ body {
     line-height: 1.7;
 }
 
-/* Banner */
 #banner {
     background: linear-gradient(to right, #6d28d9, #db2777);
     padding: 14px 24px;
@@ -19,7 +17,6 @@ body {
     margin: 0;
 }
 
-/* Navbar */
 #navbar {
     display: flex;
     background-color: #111111;
@@ -47,7 +44,6 @@ body {
     color: white;
 }
 
-/* Wrapper */
 #wrapper {
     max-width: 560px;
     margin: 40px auto;
@@ -57,7 +53,6 @@ body {
     padding: 30px 40px;
 }
 
-/* Page Headings */
 .page-heading {
     color: #f0f0f0;
     font-family: 'Lucida Sans', sans-serif;
@@ -66,7 +61,6 @@ body {
     margin-bottom: 8px;
 }
 
-/* Page Subheading */
 .page-subheading {
     color: #ffffff;
     font-family: 'Lucida Sans', sans-serif;
@@ -75,26 +69,23 @@ body {
     margin-bottom: 4px;
 }
 
-/* Page Text */
 .page-text {
     font-size: 16px;
     line-height: 1.7;
-    color: #888888;
+    color: #b0b0b0;
     margin-bottom: 12px;
 }
 
-/* Page Images */
 .page-image {
     width: 100%;
     border-radius: 8px;
     margin: 12px 0;
 }
 
-/* Page List */
 .page-list {
     font-size: 16px;
     line-height: 1.7;
-    color: #888888;
+    color: #b0b0b0;
     padding-left: 24px;
     margin-bottom: 12px;
 }
@@ -111,7 +102,6 @@ body {
     color: white;
 }
 
-/* Code */
 code {
     background-color: #1a1a1a;
     color: #e879f9;
@@ -120,15 +110,13 @@ code {
     font-size: 13px;
 }
 
-/* Description */
 #description {
     text-align: center;
     font-size: 16px;
     margin-bottom: 4px;
-    color: #888888;
+    color: #b0b0b0;
 }
 
-/* Arrow */
 #arrow {
     text-align: center;
     font-size: 28px;
@@ -136,13 +124,11 @@ code {
     margin-bottom: 12px;
 }
 
-/* Button Container */
 #button_container {
     display: flex;
     justify-content: center;
 }
 
-/* Generate Button */
 #button_container button {
     font-family: 'Inter', sans-serif;
     color: white;
@@ -158,28 +144,24 @@ code {
     opacity: 0.85;
 }
 
-/* HR */
 hr {
     margin: 20px 0;
     border: none;
     border-top: 1px solid #222222;
 }
 
-/* Output Label */
 #output_label {
     font-size: 14px;
     margin-bottom: 8px;
-    color: #555555;
+    color: #999999;
 }
 
-/* Password Output Container */
 #container {
     display: flex;
     justify-content: space-between;
     gap: 10px;
 }
 
-/* Column */
 .column {
     display: flex;
     flex-direction: column;
@@ -187,7 +169,6 @@ hr {
     flex: 1;
 }
 
-/* Output Display */
 .output_display {
     display: flex;
     align-items: center;
@@ -202,7 +183,6 @@ hr {
     word-break: break-all;
 }
 
-/* Contact Form */
 #contact_form {
     display: flex;
     flex-direction: column;
@@ -245,7 +225,6 @@ hr {
     opacity: 0.85;
 }
 
-/* Form Result */
 #form_result {
     margin-top: 16px;
     font-size: 15px;
@@ -261,7 +240,6 @@ hr {
     display: block !important;
 }
 
-/* Easter Egg */
 #easter_egg {
     display: none;
     position: fixed;
@@ -285,7 +263,6 @@ hr {
     to { left: 110%; }
 }
 
-/* Mobile */
 @media (max-width: 600px) {
     #wrapper {
         margin: 16px;
